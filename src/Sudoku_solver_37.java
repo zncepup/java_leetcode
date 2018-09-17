@@ -1,6 +1,5 @@
 public class Sudoku_solver_37 {
     public static int solvesudoku(char[][] board){
-
         char[] chosen={'1','2','3','4','5','6','7','8','9'};
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
@@ -8,14 +7,11 @@ public class Sudoku_solver_37 {
                     int res=0;
                     for (int k =0; k < 9; k++) {
                         if (isvalid(i,j,board,chosen[k])){
-
                             board[i][j]=chosen[k];
                             System.out.println(i+" "+j+chosen[k]);
                             res= solvesudoku(board);
                             if (res!=0)
                                 return 1;
-
-
                         }
                     }
                     if (res==0)
