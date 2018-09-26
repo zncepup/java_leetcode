@@ -15,8 +15,8 @@ public class baiduminmutiple {
             else
                 leaf.add(i+1);
         }
-        System.out.println(noleaf);
-        System.out.println(leaf);
+//        System.out.println(noleaf);
+//        System.out.println(leaf);
         int[][] quan=new int[noleaf.size()][leaf.size()];
         for (int i = 0; i < noleaf.size(); i++) {
             dfs(quan,noleaf.get(i),noleaf.get(i),values.get(noleaf.get(i)),leaf,noleaf,values,edges);
@@ -64,7 +64,7 @@ public class baiduminmutiple {
             }
             edges.add(x);
         }
-        System.out.println(edges);
+//        System.out.println(edges);
         int res=maxProduct(numnodes,values,edges);
         System.out.println(res);
     }
