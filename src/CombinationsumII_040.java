@@ -68,31 +68,31 @@ public class CombinationsumII_040 {
 
 
 
-//class Solution {
-//    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-//        List<List<Integer>> result = new ArrayList<>();
-//        if (candidates == null || candidates.length == 0) {
-//            return result;
-//        }
-//        Arrays.sort(candidates);
-//        dfs(result, candidates, target, new ArrayList<>(), 0);
-//        return result;
-//    }
-//
-//    private void dfs(List<List<Integer>> result, int[] candidates, int remaining, List<Integer> list, int index) {
-//        if (remaining == 0) {
-//            result.add(new ArrayList<>(list));
-//            return;
-//        }
-//        for (int i = index; i < candidates.length; i++) {
-//            if (i == index || candidates[i] != candidates[i - 1]) {
-//                if (candidates[i] > remaining) {
-//                    break;
-//                }
-//                list.add(candidates[i]);
-//                dfs(result, candidates, remaining - candidates[i], list, i + 1);
-//                list.remove(list.size() - 1);
-//            }
-//        }
-//    }
-//}
+class Solution {
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (candidates == null || candidates.length == 0) {
+            return result;
+        }
+        Arrays.sort(candidates);
+        dfs(result, candidates, target, new ArrayList<>(), 0);
+        return result;
+    }
+
+    private void dfs(List<List<Integer>> result, int[] candidates, int remaining, List<Integer> list, int index) {
+        if (remaining == 0) {
+            result.add(new ArrayList<>(list));
+            return;
+        }
+        for (int i = index; i < candidates.length; i++) {
+            if (i == index || candidates[i] != candidates[i - 1]) {
+                if (candidates[i] > remaining) {
+                    break;
+                }
+                list.add(candidates[i]);
+                dfs(result, candidates, remaining - candidates[i], list, i + 1);
+                list.remove(list.size() - 1);
+            }
+        }
+    }
+}

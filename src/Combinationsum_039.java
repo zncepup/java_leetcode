@@ -91,8 +91,8 @@ public class Combinationsum_039 {
 //        }
 //        for (int i = start; i < candidates.length; i++) {
 //            list.add(candidates[i]);
-//            helper(res, list, candidates, target - candidates[i], i);
-//            list.remove(list.size() - 1);
+//            helper(res, list, candidates, target - candidates[i], i); i防止重复
+//            list.remove(list.size() - 1); 恢复原状态
 //        }
 //    }
 //}

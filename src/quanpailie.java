@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class quanpailie {
 
@@ -18,6 +19,7 @@ public class quanpailie {
                 swap(data, begin, i);
                 permutate(data, begin + 1);
                 swap(data, begin, i);
+
             }
         }
     }
