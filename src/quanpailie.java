@@ -39,7 +39,7 @@ public class quanpailie {
 
 
     public static void main(String... args){
-        quanpailie.permutate("aacd");
+        quanpailie.permutate("123");
     }
 
 }
