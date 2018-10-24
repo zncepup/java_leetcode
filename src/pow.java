@@ -1,6 +1,6 @@
 public class pow {
-    public static double myPow(double x, int n) {
-        double res=x;
+    private static double myPow(double x, int n) {
+        double res;
         int tag=0;
         if (n==0)
             return 1.0;
@@ -30,6 +30,6 @@ public class pow {
     }
 
     public static void main(String[] args) {
-        System.out.println(myPow(2.0,10));
+        System.out.println(myPow(2.0,11));
     }
 }
