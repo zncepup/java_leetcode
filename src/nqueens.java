@@ -86,7 +86,7 @@ public class nqueens {
     }
 
     public static void main(String[] args) {
-        List<List<String>> res=solveNQueens(4);
+        List<List<String>> res=solveNQueens(9);
         for (List<String> solu:res){
             for(String s:solu)
                 System.out.println(s);
