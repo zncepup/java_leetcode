@@ -17,17 +17,14 @@ public class nqueen2 {
         if (index==chessboard.length){
             return 1;
         }
-
-        int tag=0;int res=0;
+        int res=0;
         for (int i = 0; i < chessboard.length; i++) {
 
             if (isvalid(chessboard,index,i)){
                 chessboard[index][i]='Q';
-                tag=1;
                 int go=goandback(chessboard,index+1);
                 res+=go;
                 chessboard[index][i]='.';
-                tag=0;
             }
         }
         return res;
