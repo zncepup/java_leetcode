@@ -3,9 +3,10 @@ import java.util.*;
 public class ttt {
     static int[][] rect = null;
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String res = sc.nextLine();
-        char []ss=res.toCharArray();
+//        Scanner sc = new Scanner(System.in);
+//        String res = sc.nextLine();
+//        char []ss=res.toCharArray();
+        System.out.println(3/2);
 //        rect = new int[n][n];
 //        for(int i = 0; i < n; i++){
 //            for(int j = 0; j < n; j++){
