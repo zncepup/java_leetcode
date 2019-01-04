@@ -18,5 +18,8 @@ public class unique_path {
 
     public static void main(String[] args) {
         System.out.println(uniquePaths(7,3));
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
+        }
     }
 }
